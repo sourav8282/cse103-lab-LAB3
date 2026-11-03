@@ -1,0 +1,32 @@
+LAB 3: GitHub Collaboration & API Interaction
+
+Question 3.1: Create and Manage Git Repositories
+
+Name: Sourav
+Email: [souravjaat815@gmail.com](mailto\:souravjaat815@gmail.com)
+
+Step 1: Install and Verify Git
+Command: git --version
+
+Step 2: Configure Git Identity
+Name: Sourav
+Email: [souravjaat815@gmail.com](mailto\:souravjaat815@gmail.com)
+Default branch: main
+
+Step 3: Create Local Repository
+Repository path: \~/cse103_lab/LAB3/my_first_repo
+
+Commands:
+git init
+git status
+ls -la
+
+Step 4: Create .gitignore
+**pycache**/
+\*.pyc
+.env
+
+GitHub Repository:
+cse103-lab-LAB3
+
+Repository URL:[https://github.com/sourav8282/cse103-lab-LAB3.git](https://github.com/sourav8282/cse103-lab-LAB3.git)

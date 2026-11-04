@@ -9,6 +9,7 @@
 
 ## 2. Text Formatting
 
+
 **Bold text**
 
 *Italic text*

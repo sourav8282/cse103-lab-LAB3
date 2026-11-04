@@ -1,5 +1,6 @@
-
 # Markdown Syntax Guide
+
+This file demonstrates the basic syntax of Markdown.
 
 ## 1. Headings
 
@@ -9,11 +10,11 @@
 
 ## 2. Text Formatting
 
-**Bold text**
+**This is bold text**
 
-*Italic text*
+*This is italic text*
 
-~~Strikethrough text~~
+~~This is strikethrough text~~
 
 ## 3. Unordered List
 
@@ -25,10 +26,11 @@
 
 1. First step
 2. Second step
+3. Third step
 
 ## 5. Inline Code
 
-Use `print("Hello")` to display a message.
+Use `print("Hello")` to display a message in Python.
 
 ## 6. Fenced Code Block
 
@@ -38,20 +40,26 @@ def greet(name):
 
 print(greet("Sourav"))
 
-## 7. Hyperlink
 
-[GitHub](https://github.com)
+## 7. Hyperlinks
 
-## 8. Table
+[Visit GitHub](https://github.com)
+
+## 8. Tables
 
 | Column 1 | Column 2 | Column 3 |
-|----------|:--------:|----------:|
+|---|---|---|
 | Left | Centre | Right |
+| Python | Git | Markdown |
 
 ## 9. Blockquote
 
-> An important note or reference goes here.
+> Markdown is a simple way to format documentation.
 
 ## 10. Horizontal Divider
 
 ---
+
+## Conclusion
+
+Markdown makes documentation easy to read, write and maintain.

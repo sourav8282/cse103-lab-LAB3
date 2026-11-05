@@ -14,3 +14,6 @@ my_first_repo/
 ├── README.md
 ├── MARKDOWN_GUIDE.md
 └── main.py
+
+## Description
+CSE103 lab repository - LAB 3.

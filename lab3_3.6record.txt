@@ -1,0 +1,118 @@
+LAB 3: GitHub Collaboration & API Interaction
+
+Question 3.6: Debug Common Programming and Workflow Errors (5 Marks)
+
+Name: Sourav
+Email: souravjaat815@gmail.com
+
+Step 1: Create a Merge Conflict
+
+Commands:
+git checkout -b feature-branch
+echo 'print("Output from feature-branch")' >> main.py
+git add main.py
+git commit -m "feat: add feature-branch output"
+
+Step 2: Switch to Main Branch
+
+Commands:
+git checkout main
+echo 'print("Output from main branch")' >> main.py
+git add main.py
+git commit -m "feat: add main-branch output"
+
+Step 3: Resolve Merge Conflict
+
+Command:
+git merge feature-branch
+
+Conflict resolution was verified through Git history.
+Both main branch and feature branch output statements
+were retained in main.py.
+
+Resolution:
+git add main.py
+git commit -m "merge: resolve conflict in main.py"
+
+Step 4: Identify Common Git Errors
+
+1. fatal: not a git repository
+Cause: Terminal is outside the Git repository.
+Fix: Navigate to the correct project directory.
+
+2. Nothing to commit, working tree clean
+Cause: No uncommitted changes.
+Fix: Check repository status using git status.
+
+Step 5: Debug API Errors
+
+Test 1: HTTP 404 Not Found
+
+Command:
+curl --max-time 15 -i https://jsonplaceholder.typicode.com/posts/9999
+
+Result: HTTP 404
+Meaning: Requested resource was not found.
+Solution: Check the resource ID and URL.
+
+Test 2: HTTP 401 Unauthorized
+
+Command:
+curl --max-time 15 -i https://api.github.com/user
+
+Result: HTTP 401
+Message: Requires authentication.
+Meaning: Authentication is required.
+Solution: Provide a valid GitHub access token.
+
+Test 3: Incorrect API Endpoint
+
+Command:
+curl --max-time 15 -i https://jsonplaceholder.typicode.com/post
+
+Result: HTTP 404
+Meaning: Incorrect API endpoint.
+Solution: Use the correct endpoint /posts.
+
+Step 6: Git Recovery Commands
+
+1. git diff HEAD
+Effect: Shows uncommitted changes.
+
+2. git stash
+Effect: Temporarily saves local changes.
+
+3. git stash pop
+Effect: Restores the most recently stashed changes.
+
+4. git restore <file>
+Effect: Discards local changes to a file.
+
+5. git reset --soft HEAD~1
+Effect: Removes the latest commit but keeps changes staged.
+
+6. git reset --mixed HEAD~1
+Effect: Removes the latest commit but keeps changes unstaged.
+
+7. git reset --hard HEAD~1
+Effect: Removes the latest commit and discards changes.
+
+8. git revert <commit-hash>
+Effect: Creates a new commit that reverses an older commit.
+
+9. git log --all --oneline --graph
+Effect: Displays all branches and commit history.
+
+Step 7: Conclusion
+
+In this practical exercise, I learned how to identify
+and resolve Git merge conflicts, understand common Git
+errors, and debug API authentication and resource errors.
+
+I successfully tested HTTP 404 and HTTP 401 responses
+using curl commands. I also practiced Git recovery
+commands such as git diff, git stash, git stash pop,
+and git log.
+
+This exercise improved my understanding of Git workflows,
+API debugging, and software development troubleshooting.

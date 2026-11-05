@@ -1,0 +1,71 @@
+LAB 3: GitHub Collaboration & API Interaction
+
+Question 3.1: Create and Manage Git Repositories
+
+Name: Sourav
+Email: [souravjaat815@gmail.com](mailto\:souravjaat815@gmail.com)
+
+Step 1: Install and Verify Git
+Command: git --version
+
+Step 2: Configure Git Identity
+Name: Sourav
+Email: [souravjaat815@gmail.com](mailto\:souravjaat815@gmail.com)
+Default branch: main
+
+Step 3: Create Local Repository
+Repository path: \~/cse103_lab/LAB3/my_first_repo
+
+Commands:
+git init
+git status
+ls -la
+
+Step 4: Create .gitignore
+**pycache**/
+\*.pyc
+.env
+
+GitHub Repository:
+cse103-lab-LAB3
+
+Repository URL:[https://github.com/sourav8282/cse103-lab-LAB3.git](https://github.com/sourav8282/cse103-lab-LAB3.git)
+           
+
+
+Question 3.3: Push Projects to GitHub (5 Marks)
+
+Name: Sourav
+Email: souravjaat815@gmail.com
+
+GitHub Repository:
+https://github.com/sourav8282/cse103-lab-LAB3
+
+Step 1: Link Local Repository
+Command:
+git remote -v
+
+Step 2: Authenticate
+GitHub username: sourav8282
+Authentication: Personal Access Token
+
+Step 3: Push Commits
+Commands:
+git add .
+git commit -m "Add main.py and README"
+git push -u origin main
+
+Step 4: Push Another Commit
+Commands:
+git add CHANGELOG.md
+git commit -m "docs: add changelog file"
+git push
+
+Step 5: Pull Changes from GitHub
+Commands:
+git pull
+cat README.md
+git log --oneline
+
+Result:
+Local commits pushed to GitHub and remote changes pulled into the local repository.

@@ -1,0 +1,42 @@
+CSE103 — LAB 3
+
+Question 3.3: Push Projects to GitHub
+
+Name: Sourav
+Email: souravjaat815@gmail.com
+
+GitHub Repository:
+https://github.com/sourav8282/cse103-lab-LAB3
+
+Step 1: Link Local Repository to GitHub
+
+Commands:
+git remote -v
+
+Step 2: Push Commits to GitHub
+
+Commands:
+git add .
+git commit -m "Add main.py and README"
+git push -u origin main
+
+Step 3: Push Another Commit
+
+Commands:
+git add CHANGELOG.md
+git commit -m "docs: add changelog file"
+git push
+
+Step 4: Pull Changes From GitHub
+
+Commands:
+git pull
+cat README.md
+
+Step 5: View Updated Commit History
+
+Command:
+git log --oneline
+
+Conclusion:
+Successfully connected the local Git repository to GitHub, pushed commits, created a changelog file, and pulled remote updates.
